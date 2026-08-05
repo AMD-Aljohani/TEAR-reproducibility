@@ -1,0 +1,2 @@
+n,reps,mean_abs_sqrt_n_delta_beta1,q95_abs_sqrt_n_delta_beta1,mean_abs_sqrt_n_delta_gamma,q95_abs_sqrt_n_delta_gamma,loose_success_rate,tight_success_rate,median_loose_grad,median_tight_grad
+1000,80,7.9361006375973e-06,3.3700735926896204e-05,2.1911603901681277e-05,0.00010212886589367083,1.0,1.0,3.6394311884180297e-06,1.2910696438358487e-07

@@ -1,0 +1,2 @@
+scenario,n,reps,mean_scaled_exp,median_scaled_exp,ks_D_vs_Exp1,ks_p,oracle_95_coverage,oracle_median_frequency,feasible_reps,feasible_95_coverage,feasible_median_frequency,mean_c_oracle,mean_c_feasible
+endpoint_baseline,10000,300,1.0151605025176154,0.6665637109500667,0.03562387550211732,0.8276389318814888,0.9466666666666667,0.52,150,0.92,0.5466666666666666,0.056315793049603734,0.05647911411230551

@@ -1,0 +1,5 @@
+item,status,caveat
+population_screen,reproduced from official archive,The raw trace is external; code downloads or accepts the official fastStorage archive.
+timestamp_encoding,handled explicitly,The archive header says milliseconds but the current files store Unix seconds; the reader detects either representation.
+VM 718 inference,descriptive only in V5,The focal series was selected partly by lag correlation and observed maximum; no post-selection p-value is interpreted.
+continuous likelihood,known limitation,Telemetry rounding and discreteness can contribute to PIT defects.

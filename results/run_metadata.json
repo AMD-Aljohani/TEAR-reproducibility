@@ -1,0 +1,120 @@
+{
+  "mode": "expanded_locked",
+  "seed_base": 20260803,
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "platform": "Linux-6.12.13-x86_64-with-glibc2.41",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "endpoint_convention": "max X_1,...,X_n; likelihood X_1->X_2,...,X_{n-1}->X_n",
+  "scenarios": {
+    "low_persistence": {
+      "name": "low_persistence",
+      "K": 1.0,
+      "q": 1.5,
+      "gamma": 0.75,
+      "x0_mode": "stationary"
+    },
+    "baseline": {
+      "name": "baseline",
+      "K": 1.0,
+      "q": 1.0,
+      "gamma": 4.0,
+      "x0_mode": "stationary"
+    },
+    "near_active": {
+      "name": "near_active",
+      "K": 1.0,
+      "q": 0.15,
+      "gamma": 4.0,
+      "x0_mode": "stationary"
+    },
+    "stress": {
+      "name": "stress",
+      "K": 1.0,
+      "q": 5.0,
+      "gamma": 5.0,
+      "x0_mode": "stationary"
+    }
+  },
+  "counts": {
+    "correct_spec_reps_per_cell": 160,
+    "endpoint_plans": [
+      [
+        "baseline",
+        1000,
+        300,
+        1
+      ],
+      [
+        "baseline",
+        10000,
+        250,
+        5
+      ],
+      [
+        "stress",
+        10000,
+        300,
+        3
+      ],
+      [
+        "stress",
+        100000,
+        150,
+        10
+      ]
+    ],
+    "misspec_reps_per_cell": 120,
+    "optimizer_reps": 80
+  },
+  "additional_experiments": {
+    "aligned_endpoint_baseline": {
+      "scenario": {
+        "K": 1.0,
+        "q": 2.5,
+        "gamma": 2.5,
+        "beta1": 5.0
+      },
+      "n": 10000,
+      "reps": 300,
+      "feasible_fits": 150
+    },
+    "smooth_nonlinear_rate_misspecification": {
+      "rate": "1 + 2(1-x) + 3(1-x)^2",
+      "n": [
+        500,
+        2000
+      ],
+      "reps_per_cell": 200
+    },
+    "beta_ar_support_failure": {
+      "n": [
+        500,
+        2000
+      ],
+      "reps_per_cell": 120,
+      "interpretation": "assumption-failure diagnostic, not coverage experiment"
+    }
+  },
+  "revision": "v5_exact_endpoint_bounds",
+  "correct_spec_delta": 0.02,
+  "correct_spec_constraint_faces": {
+    "total": 501,
+    "q_lower_face": 387,
+    "gamma_zero_face": 114
+  },
+  "generic_rate_experiment": "removed; algebraic illustration not retained as empirical evidence",
+  "application_reproduction": {
+    "script": "code/reproduce_application.py",
+    "official_raw_archive_redistributed": false,
+    "full_run_in_build_environment": false,
+    "reason": "raw public archive unavailable during package assembly"
+  },
+  "exact_endpoint_bounds": {
+    "result": "closed-form finite-sample sandwich added",
+    "verification_csv": "endpoint_exact_tail_bounds.csv",
+    "wall_density_bracket_csv": "endpoint_wall_density_brackets.csv",
+    "exact_coverage_csv": "endpoint_coverage_exact_binomial.csv"
+  },
+  "automated_tests": "10/10 passed"
+}

@@ -1,0 +1,7 @@
+diagnostic,value
+screened_series,65.0
+boundary_aware_persistence_p_lt_0_05,56.0
+positive_heldout_mean_log_density_gain,61.0
+median_heldout_mean_log_density_gain,0.031205588669967366
+full_sample_wall_rate_constraint_active,57.0
+cdf_distance_below_1_36_over_sqrt_n_minus_1,0.0

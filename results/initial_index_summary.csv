@@ -1,0 +1,3 @@
+n,reps,exclude_mean,exclude_zero_frequency,include_mean,include_zero_frequency
+300,300,10.489722866906654,0.0,0.0,1.0
+1000,300,10.257849905911211,0.0,0.0,1.0

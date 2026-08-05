@@ -1,0 +1,9 @@
+item,value
+validation_date,2026-08-04
+official_archive_sha256,11313f528a0cbcbe57e63162f8ae5a41a9c7e7c1a79872e294ff3c5bbaa2e671
+screened_series,65
+successful_series_fits,65
+focal_vm_id,718
+monitored_comparison_rows,34
+maximum_absolute_locked_difference,0.0
+automated_tests_passed,11/11
